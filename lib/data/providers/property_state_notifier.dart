@@ -9,6 +9,7 @@ class PropertiesNotifier extends StateNotifier<List<PropertyModel>> {
 
   final Ref ref;
 
+  //get all announcements
   Future getAllProperties({required Ref ref}) async {
     await ref.read(propertyRepositoryProvider).getProperties().then((value) {
       state = value;
@@ -16,6 +17,7 @@ class PropertiesNotifier extends StateNotifier<List<PropertyModel>> {
     });
   }
 
+  // add to bookmarks
   void toggleBookmark(String id, {required bool isBookmarked}) {
     final updatedProperty = state
         .firstWhere((element) => element.externalID == id)

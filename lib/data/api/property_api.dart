@@ -8,6 +8,7 @@ class PropertyApi {
   // injecting dio instance
   PropertyApi(this._dioClient);
 
+  //get all properties api
   Future<Map<String, dynamic>> fetchProperties() async {
     try {
       final res = await _dioClient.get('${Endpoints.baseUrl}/list?locationExternalIDs=5002,6020');

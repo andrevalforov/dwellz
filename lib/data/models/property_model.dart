@@ -22,6 +22,7 @@ class PropertyModel with _$PropertyModel {
     @Default(false) bool isBookmarked,
   }) = _PropertyModel;
 
+  //serialize objects
   factory PropertyModel.fromJson(Map<String, dynamic> json) =>
       _$PropertyModelFromJson(json);
 }

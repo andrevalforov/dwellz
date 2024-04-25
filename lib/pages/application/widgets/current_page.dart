@@ -26,7 +26,7 @@ class CurrentPage extends StatelessWidget {
     return currentWidget[index];
   }
 }
-
+// bottom navigation panel
 var bottomTabs = [
   BottomNavigationBarItem(
     label: "Home",
