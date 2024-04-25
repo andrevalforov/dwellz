@@ -67,6 +67,7 @@ class ProfilePage extends ConsumerWidget {
             SizedBox(height: 10.h),
             TextFormField(
               keyboardType: TextInputType.text,
+              obscureText: true,
               onChanged: null,
               style: appStyle(
                   14,
