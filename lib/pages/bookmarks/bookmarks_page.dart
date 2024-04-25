@@ -12,6 +12,7 @@ import '../property_details/property_details_page.dart';
 class BookmarksPage extends ConsumerWidget {
   const BookmarksPage({super.key});
 
+  //builds bookmarks page widget
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final propertyBookmarksList = ref.watch(bookmarksProvider);

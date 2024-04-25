@@ -7,6 +7,7 @@ import 'package:realtor_app/core/constants/app_style.dart';
 class SignupPage extends ConsumerWidget {
   const SignupPage({super.key});
 
+  //builds sign up page
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(

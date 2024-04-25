@@ -19,6 +19,7 @@ class PropertyCard extends ConsumerWidget {
   final void Function() onTap;
   final PropertyModel property;
 
+  //builds announcement card widget
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Padding(
@@ -33,6 +34,7 @@ class PropertyCard extends ConsumerWidget {
                   borderRadius: BorderRadius.only(
                       topRight: Radius.circular(12.w),
                       topLeft: Radius.circular(12.w)),
+                  // cached image from url
                   child: CachedNetworkImage(
                     imageUrl: property.coverPhoto ?? "",
                     fit: BoxFit.cover,

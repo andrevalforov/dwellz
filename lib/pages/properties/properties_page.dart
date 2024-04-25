@@ -13,6 +13,7 @@ import '../property_details/property_details_page.dart';
 class PropertiesPage extends ConsumerWidget {
   const PropertiesPage({super.key});
 
+  //builds all announcements page
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final propertyList = ref.watch(propertyProvider);

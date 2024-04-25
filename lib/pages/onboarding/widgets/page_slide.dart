@@ -25,6 +25,7 @@ class PageSlide extends ConsumerWidget {
   final String imagePath;
   final PageController pageController;
 
+  //builds slide on first app open
   @override
   Widget build(BuildContext context, WidgetRef ref) {
    SharedPreferenceHelper sharedPreferenceHelper;

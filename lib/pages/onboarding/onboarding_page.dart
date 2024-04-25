@@ -9,6 +9,7 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 class OnboardingPage extends ConsumerWidget {
   const OnboardingPage({super.key});
 
+  //builds page for first time open
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     PageController pageController = PageController(initialPage: 0);

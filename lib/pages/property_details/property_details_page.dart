@@ -14,6 +14,7 @@ class PropertyDetailsPage extends ConsumerWidget {
 
   final PropertyModel property;
 
+  //builds announcement page
   @override
   Widget build(BuildContext context, WidgetRef ref) {
   double screenHeight = MediaQuery.of(context).size.height;

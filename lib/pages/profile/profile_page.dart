@@ -10,6 +10,7 @@ import '../application/providers/application_providers.dart';
 class ProfilePage extends ConsumerWidget {
   const ProfilePage({super.key});
 
+  //builds profile page or if not signed in, then sign in page
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(

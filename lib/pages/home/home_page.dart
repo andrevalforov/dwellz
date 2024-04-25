@@ -15,6 +15,7 @@ import '../application/providers/application_providers.dart';
 class HomePage extends ConsumerWidget {
   const HomePage({super.key});
 
+  //builds home page widget
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     double screenHeight = MediaQuery.of(context).size.height;
