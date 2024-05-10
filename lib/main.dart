@@ -6,11 +6,13 @@ import 'package:realtor_app/pages/application/application_page.dart';
 import 'package:realtor_app/pages/onboarding/onboarding_page.dart';
 import 'package:realtor_app/routes/app_routes.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 int? isFirstTime;
 
+// main method
 Future<void> main() async {
+  // initializes widgets
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   // FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
   SharedPreferences prefs = await SharedPreferences.getInstance();
@@ -29,9 +31,10 @@ Future<void> main() async {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+  // This widget is the root of application.
   @override
   Widget build(BuildContext context) {
+    // Set up screen preferences
     return ScreenUtilInit(
       designSize: const Size(375, 812),
       builder: (context, child) => MaterialApp(
@@ -42,7 +45,8 @@ class MyApp extends StatelessWidget {
           fontFamily: "Travels",
           appBarTheme: const AppBarTheme(elevation: 0, backgroundColor: Colors.transparent),
         ),
-        home: const OnboardingPage(),
+        // if web application, then hide onboarding pages
+        home: kIsWeb ? const ApplicationPage() : const OnboardingPage(),
         // home: isFirstTime == 1 ? const ApplicationPage() : const OnboardingPage(),
         routes: AppRoutes.routes,
       ),

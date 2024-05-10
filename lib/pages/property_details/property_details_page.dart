@@ -104,7 +104,7 @@ class PropertyDetailsPage extends ConsumerWidget {
               ),
             )
           ],
-          flexibleSpace: Container(
+          flexibleSpace: SizedBox(
             height: screenHeight/2,
             child: CachedNetworkImage(
               imageUrl: property.coverPhoto ?? "",
@@ -245,7 +245,7 @@ class PropertyDetailsPage extends ConsumerWidget {
                     SizedBox(height: 10.h),
                     const Divider(),
                     SizedBox(height: 10.h),
-                    Container(
+                    SizedBox(
                       width: double.infinity,
                       child: Text(
                         property.title ?? "",
@@ -257,7 +257,7 @@ class PropertyDetailsPage extends ConsumerWidget {
                     SizedBox(height: 9.h),
                     const Divider(),
                     SizedBox(height: 10.h),
-                    Container(
+                    SizedBox(
                       width: double.infinity,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -285,7 +285,7 @@ class PropertyDetailsPage extends ConsumerWidget {
                       ),
                     ),
                     SizedBox(height: 16.h),
-                    Container(
+                    SizedBox(
                       width: double.infinity,
                       child: Text(
                         "Facilities",
@@ -295,7 +295,7 @@ class PropertyDetailsPage extends ConsumerWidget {
                       ),
                     ),
                     SizedBox(height: 14.h),
-                    Container(
+                    SizedBox(
                       width: 340.w,
                       height: screenHeight/6,
                       child: ListView.builder(

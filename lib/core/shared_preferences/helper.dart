@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:realtor_app/core/shared_preferences/preferences.dart';
 
+//authorisation processor
 class SharedPreferenceHelper {
   final Preference _sharedPreference;
 

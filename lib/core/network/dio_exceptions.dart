@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 
+// exception processor
 class DioExceptions implements Exception {
   late String message;
 

@@ -12,6 +12,7 @@ class SignupPage extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
       backgroundColor: AppColors.black,
+      //application bar with logo
       appBar: AppBar(
         backgroundColor: AppColors.black,
         shadowColor: Colors.black,

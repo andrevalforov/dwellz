@@ -6,7 +6,6 @@ import 'package:realtor_app/core/shared_preferences/helper.dart';
 import 'package:realtor_app/routes/routes.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../../../core/shared_provider/shared_providers.dart';
 
 class PageSlide extends ConsumerWidget {
   const PageSlide(

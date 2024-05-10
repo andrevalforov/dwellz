@@ -1,10 +1,8 @@
-import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:realtor_app/core/constants/app_colors.dart';
-import 'package:realtor_app/core/constants/app_style.dart';
 import 'package:realtor_app/data/providers/property_provider.dart';
 
 import '../home/widgets/property_card.dart';

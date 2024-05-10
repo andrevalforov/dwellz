@@ -192,7 +192,7 @@ class HomePage extends ConsumerWidget {
                 padding: EdgeInsets.symmetric(horizontal: 0.w, vertical: 0.h),
                 child: isLoading
                     ? CircularProgressIndicator(color: AppColors.priColor)
-                    : Container(
+                    : SizedBox(
                         width: 345.w,
                         height: 290.h,
                         child: ListView.builder(
@@ -222,7 +222,7 @@ class HomePage extends ConsumerWidget {
                 padding: EdgeInsets.symmetric(horizontal: 0.w, vertical: 0.h),
                 child: isLoading
                     ? CircularProgressIndicator(color: AppColors.priColor)
-                    : Container(
+                    : SizedBox(
                         width: 345.w,
                         height: 290.h,
                         child: ListView.builder(

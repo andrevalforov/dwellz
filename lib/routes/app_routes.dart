@@ -2,7 +2,6 @@ import 'package:realtor_app/pages/application/application_page.dart';
 import 'package:realtor_app/pages/bookmarks/bookmarks_page.dart';
 import 'package:realtor_app/pages/onboarding/onboarding_page.dart';
 import 'package:realtor_app/pages/properties/properties_page.dart';
-import 'package:realtor_app/pages/property_details/property_details_page.dart';
 import 'package:realtor_app/routes/routes.dart';
 
 import '../pages/home/home_page.dart';

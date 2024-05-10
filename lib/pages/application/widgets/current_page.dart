@@ -32,44 +32,44 @@ var bottomTabs = [
     label: "Home",
     icon: Padding(
       padding: EdgeInsets.only(bottom: 5.h),
-      child: Icon(Icons.space_dashboard_outlined),
+      child: const Icon(Icons.space_dashboard_outlined),
     ),
     activeIcon: Padding(
       padding: EdgeInsets.only(bottom: 5.h),
-      child: Icon(Icons.space_dashboard),
+      child: const Icon(Icons.space_dashboard),
     ),
   ),
   BottomNavigationBarItem(
     label: "Properties",
     icon: Padding(
       padding: EdgeInsets.only(bottom: 5.h),
-      child: Icon(Icons.other_houses_outlined),
+      child: const Icon(Icons.other_houses_outlined),
     ),
     activeIcon: Padding(
       padding: EdgeInsets.only(bottom: 5.h),
-      child: Icon(Icons.other_houses),
+      child: const Icon(Icons.other_houses),
     ),
   ),
   BottomNavigationBarItem(
     label: "Bookmark",
     icon: Padding(
       padding: EdgeInsets.only(bottom: 5.h),
-      child: Icon(Icons.bookmarks_outlined),
+      child: const Icon(Icons.bookmarks_outlined),
     ),
     activeIcon: Padding(
       padding: EdgeInsets.only(bottom: 5.h),
-      child: Icon(Icons.bookmarks),
+      child: const Icon(Icons.bookmarks),
     ),
   ),
   BottomNavigationBarItem(
     label: "Profile",
     icon: Padding(
       padding: EdgeInsets.only(bottom: 5.h),
-      child: Icon(Icons.person_2_outlined),
+      child: const Icon(Icons.person_2_outlined),
     ),
     activeIcon: Padding(
       padding: EdgeInsets.only(bottom: 5.h),
-      child: Icon(Icons.person_2),
+      child: const Icon(Icons.person_2),
     ),
   )
 ];

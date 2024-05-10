@@ -17,7 +17,7 @@ class PropertiesNotifier extends StateNotifier<List<PropertyModel>> {
     });
   }
 
-  // add to bookmarks
+  // add/remove announcement to bookmarks
   void toggleBookmark(String id, {required bool isBookmarked}) {
     final updatedProperty = state
         .firstWhere((element) => element.externalID == id)

@@ -5,7 +5,6 @@ import 'package:realtor_app/core/constants/app_colors.dart';
 import 'package:realtor_app/core/constants/app_style.dart';
 import 'package:realtor_app/pages/application/widgets/current_page.dart';
 
-import '../application/providers/application_providers.dart';
 
 class ProfilePage extends ConsumerWidget {
   const ProfilePage({super.key});

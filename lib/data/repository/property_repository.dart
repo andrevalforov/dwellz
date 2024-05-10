@@ -1,4 +1,3 @@
-import 'dart:convert';
 import 'dart:developer';
 
 import 'package:dio/dio.dart';
@@ -11,6 +10,7 @@ class PropertyRepository {
 
   PropertyRepository(this._propertyApi);
 
+  // create announcement models from api data
   Future<List<PropertyModel>> getProperties() async {
     try {
       final res = await _propertyApi.fetchProperties();
